@@ -30,7 +30,7 @@ namespace MicrosoftActivationWizard
 
         private Process RunInCmd(string path, string args = "")
         {
-            var proc = new Process { StartInfo = new ProcessStartInfo("cmd.exe", $"/C {path} {args}") };
+            var proc = new Process { StartInfo = new ProcessStartInfo("cmd.exe", $"/C \"{path}\" {args}") };
             proc.Start();
 
             return proc;
