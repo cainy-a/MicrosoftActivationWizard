@@ -1,0 +1,7 @@
+# Visual Studio files
+.vs
+# Jetbrains IDE files
+.idea
+# .NET Build system files
+obj
+bin
